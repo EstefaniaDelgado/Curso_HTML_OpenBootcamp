@@ -1,0 +1,56 @@
+h1 { /* hace referencia a todos los h1, vamos a cambiarle el color */
+  color: red; 
+} 
+
+ /* color para los parrafos y tamaño */
+p{
+    color: blue; 
+    font-size: 16pt;
+ /* El atributo que va despues sobre overwriting al anterior */
+}
+/*Acceder a los selecctores de id*/
+/* solo los parrafos <p> de primera-noticia se les ponga este estilo */
+#primera-noticia{
+    color:green;
+    font-size: 12pt;
+}
+/* segunda-noticia se le pone este estilo */
+#segunda-noticia{
+ /*    color: darkmagenta; */
+ font-size: 10pt;
+}
+/* Acceder a los selectores de CLASE */
+.encabezado{
+    font-size: 24pt;
+    text-transform: uppercase;
+}
+/* selecctor universal (*) */
+/* en este caso cualquier elemento que tenga la clase warning los pone rojos */
+*.warning{
+    color:red;
+}
+/* Afectar a difentes selectores con un mismo estilo al mismo tiempo */
+
+.autor, .fecha, .ubicacion, h1, #segunda-noticia{
+    text-decoration: underline;
+}
+
+/* De esta manera se haria para cada uno pero se hace simplificado con la forma anterior */
+.autor{
+    text-decoration: underline;
+}
+.fecha{
+    text-decoration: underline;
+}
+.ubicacion{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
