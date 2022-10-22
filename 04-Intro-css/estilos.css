@@ -6,17 +6,19 @@ h1 { /* hace referencia a todos los h1, vamos a cambiarle el color */
 p{
     color: blue; 
     font-size: 16pt;
- /* El atributo que va despues sobre overwriting al anterior */
+ /* El atributo que va despues overwriting al anterior */
 }
+
 /*Acceder a los selecctores de id*/
 /* solo los parrafos <p> de primera-noticia se les ponga este estilo */
+
 #primera-noticia{
     color:green;
     font-size: 12pt;
 }
 /* segunda-noticia se le pone este estilo */
 #segunda-noticia{
- /*    color: darkmagenta; */
+/*  color: darkmagenta; */ 
  font-size: 10pt;
 }
 /* Acceder a los selectores de CLASE */

@@ -11,7 +11,7 @@
 }
 
 .color-rgb{
-    color: rgba(128, 0, 255, 0.473) /* le ponemos un valor a cada color, esto nos arroja un tipo de color */
+    color: rgb(100,0,200) /* le ponemos un valor a cada color, esto nos arroja un tipo de color */
 }
 .color-rgba{
     color: rgba(10,10,10, 0.85);
@@ -19,13 +19,13 @@
 
 /*  Fondos */
 .fondo{
-    background-color:cornflowerblue;
-    background-image: url("https://d33wubrfki0l68.cloudfront.net/89a052ddc6d368ce93d9067e8444c36a3558efe7/f9e10/static/triangle_background2-6eded4a7ad80c007fb65f02c828e5dd0.jpg"); /* un string que contiene la url */
+    background-color:cornflowerblue; /* fondo imagen de una url externa */
+    background-image: url("https://d33wubrfki0l68.cloudfront.net/89a052ddc6d368ce93d9067e8444c36a3558efe7/f9e10/static/triangle_background2-6eded4a7ad80c007fb65f02c828e5dd0.jpg"); /* direccion contiene la url */
     background-position: center center;
 }
 .fondo-interno{ /* fondo guardado en una carpeta Imagenes */
     background-color:cornflowerblue;
-    background-image: url("Imagenes/triangle_background-9df4fa2e10f0e294779511e99083c2bc.jpg"); /* carpeta que contiene la imagen */
+    background-image: url("Imagenes/triangle_background-9df4fa2e10f0e294779511e99083c2bc.jpg"); /* carpeta que contiene la url de la imagen */
     background-position: left bottom;
 }
 
@@ -44,9 +44,8 @@ background-color: aqua;
     border-style: solid;
     border-color: rgb(150, 150, 150);
     border-width: 1px;
-    /* border-top: none; */
-    /* padding: 10px 20px 30px 40px; */
-    padding: 10px 20px;
-    /* margin: 10px 20px 30px 40px; */
-    margin: 10px 20px;
+ /* border-top: none; */
+   /*  padding: 10px 20px 30px 40px; */
+   padding: 10px 20px;
+   margin: 10px 20px;
 }

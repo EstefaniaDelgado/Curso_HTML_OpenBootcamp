@@ -1,0 +1,45 @@
+div{ /* independientemente de la clase todos los div se ven afectados por este estilo */
+   border: 1px solid gray;
+   padding: 5px;
+   margin: 5px;
+   background-color: white;
+}
+/* Posiciionamiento relativo; se posiciona en relacion al posicionamiento original */
+.relative{
+    position: relative;
+    left: 80px;
+    margin-left: 10px;
+}
+/* Posiciionamiento fijo y se posiciona en relacion a la pantalla */
+.fixed{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color:greenyellow;
+    z-index: 10; /* para que salga por encima de todo el contenido */
+}
+
+/* Posicionamiento absoluto */
+
+.absolute{
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+}
+
+/* aqui este div absoluto se pocisiona en funcion de su padre relativo */
+.relative.contenedor{ 
+    width: 300px;
+    height: 400px;
+    background-color: blue;
+}
+
+/* Posicionamiento pegajoso-al hacer scroll modifica su posicionamiento */
+.sticky{
+    position: sticky;
+    background-color: darksalmon;
+    color: white;
+    top: 0px;/* se posiciona arriba */
+    z-index: 2;
+}
+
