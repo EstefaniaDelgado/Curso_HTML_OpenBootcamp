@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Clases</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .hover {
+            width: 300px;
+            height: 100px;
+            background-color: bisque;
+        }
+         /* utilizamos las pseudo clases usando los dos puntos */
+         /* el hover se activa en cuanto el raton para por encima y en este caso cambia el color de bique de arriba por el de burlywood*/
+        .hover:hover{
+            background-color: burlywood;
+        }
+        /* queremos que esta div de clase listado: */
+        .listado{
+            padding: 15px;
+            background-color: aquamarine;
+        }
+        /* esta seudoclase hace referencia a todas las clases listado que sean el primer elemento, aqui le decimos que afecte a todos los p que sean primer elemento dentro una clase listado */
+        .listado p:first-child{ /* o podemos referenciarlo p: first-child */
+      color: white;
+        }
+        /* para controlar el color azul de un link que no se haya visitado todavia : */
+        a:link{
+            color: deeppink
+        }
+        /*  el link visitado en vez de tener ese color morado de visitado  */
+        a:visited{
+            color: crimson;
+        }
+        /* con el hover me ponga un color pink, cambia de color cuando el cursor pasa por encima  */
+        a:hover{
+            color:pink
+        }
+        /* cuando este activo que se ha cambiado de color quiero que tengar un color en el momento que hago click */
+        a:active{
+            color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- en el mismo documento html creamos el css -->
+    <div class="hover">
+    <p>
+ Mollit esse proident elit sit. Occaecat aliqua esse adipisicing ad cillum anim elit
+ dolore nulla labore eu ullamco excepteur eiusmod. Ullamco mollit elit est non occaecat minim 
+ irure officia exercitation est reprehenderit. 
+    </p>
+    </div>
+    <div class="listado">
+        <p>Parrafo 1</p>
+        <p>Parrafo 2</p>
+        <p>Parrafo 3</p>
+    </div>
+    <!-- se usa mucho en los enlaces -->
+     <div class="enlaces">
+        <a href="http://google.com" target="_blank"> Enlace a google</a>
+        <a href="http://marca.com" target="_blank"> Enlace a Marca</a>
+     </div>
+</body>
+</html>

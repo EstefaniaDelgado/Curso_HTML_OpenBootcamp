@@ -1,0 +1,27 @@
+/* para seleccionar un clase de una etiqueta */
+.p-contenedor{
+    color: green;
+}
+
+/* queremos ganar precision si queremos que solo afecte al contenedor dentro de la seccion main */
+
+section.main .contenedor p{
+    color: green
+}
+
+/* o dentro de body podemos buscar la seccion con clase main y dentro de esta seleccion vamos a buscar
+todos los elementos con clase contenedor y buscamos todos los p */
+
+body section.main  .contenedor p{
+    color: green;
+}
+
+
+/* anidando: . nombre clase + nombre etiqueta */
+.contenedor p{
+    color: green;
+}
+/* anidando: .nombre clase + id nombre */
+.contenedor #boton-contenedor{
+      background-color: yellow;
+}

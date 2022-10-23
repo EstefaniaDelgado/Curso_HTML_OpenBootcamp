@@ -1,0 +1,50 @@
+.contenedor {
+    width: 300px;
+    height: 100px;
+    background-color: aquamarine;
+}
+/* podemos tambien acceder a los selectores a traves de la etiqueta y luego la clase */
+span.frase{
+    font-style: italic;
+}
+/* quiero que todos los span tengan la clase frase tengan comillas, para ello usamos los selectores after y before  (::after) (::before)*/
+span.frase::before{
+    content: "<<";
+    font-size: xx-small ;
+}
+span.frase::after{
+    content: ">>";
+    font-size: x-small;
+}
+.libro{
+    background-color: bisque;
+    padding: 15px;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+/* este seudo elemento solo afecta a la primera letra de cualquier parrafo dentro de la clase libro (::first-letter)*/
+.libro p::first-letter{
+    font-size: xx-large;
+}
+
+/* quiero que la primera linea de la clase libro sea de color blanco (::first-line) */
+.libro p::first-line{
+    color: white;
+}
+
+/* quiero cuando selecciono algo que aparace en azul y la letra en blanco por defecto lo pueda modificar y cambiar esos colores (::slection)*/
+.libro p::selection{
+    background-color: chocolate;
+    color:  lime;
+}
+
+/* dentro de la clase listado quiero que accedas al tag ul y quiero que a todos los li que se pongan de color rojo usando el pseudo elemento  market  en la clase listado, lo mismo con las listas ordenadas ol (::marker)*/
+
+/* si les quito el ul, y el ol, afectaria a ambos listados */
+
+.listado ul li::marker{
+    color:red
+}
+.listado ol li::marker{
+    color: chartreuse;
+}
